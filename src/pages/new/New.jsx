@@ -1,4 +1,4 @@
-
+import "./new.scss"
 
 const New = () => {
     return (
