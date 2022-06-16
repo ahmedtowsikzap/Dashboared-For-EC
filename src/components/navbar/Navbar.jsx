@@ -17,23 +17,32 @@ const Navbar = () => {
         </div>
         <div className="items">
           <div className="item">
-            <PublicIcon />
+            <PublicIcon className="icon" />
             English
           </div>
           <div className="item">
-            <DarkModeOutlinedIcon />
+            <DarkModeOutlinedIcon className="icon" />
           </div>
           <div className="item">
-            <NotificationsNoneOutlinedIcon />
+            <NotificationsNoneOutlinedIcon className="icon" />
+            <div className="counter">2</div>
           </div>
           <div className="item">
-            <SendOutlinedIcon />
+            <SendOutlinedIcon className="icon" />
+            <div className="counter">1</div>
           </div>
           <div className="item">
-            <CropFreeOutlinedIcon />
+            <CropFreeOutlinedIcon className="icon" />
           </div>
           <div className="item">
-            <BlurOnOutlinedIcon />
+            <BlurOnOutlinedIcon className="icon" />
+          </div>
+          <div className="item">
+            <img
+              src="https://images.unsplash.com/photo-1520975661595-6453be3f7070?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+              alt="men"
+              className="pic"
+            />
           </div>
         </div>
       </div>
