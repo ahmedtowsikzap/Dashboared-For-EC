@@ -7,7 +7,7 @@ const Home = () => {
       <Sidebar />
       <div className="homeContainer">
         <Navbar />
-        home container
+        <div className="widgets"></div>
       </div>
     </div>
   );

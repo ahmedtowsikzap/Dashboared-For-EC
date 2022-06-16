@@ -25,11 +25,11 @@ const Navbar = () => {
           </div>
           <div className="item">
             <NotificationsNoneOutlinedIcon className="icon" />
-            <div className="counter">2</div>
+            <div className="counter">6</div>
           </div>
           <div className="item">
             <SendOutlinedIcon className="icon" />
-            <div className="counter">1</div>
+            <div className="counter">2</div>
           </div>
           <div className="item">
             <CropFreeOutlinedIcon className="icon" />
