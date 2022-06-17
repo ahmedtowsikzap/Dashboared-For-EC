@@ -9,7 +9,9 @@ const Featured = () => {
           <MoreVertIcon fontSize="small" />
         </h1>
       </div>
-      <div className="bottom"></div>
+      <div className="bottom">
+        <div className="featuredChart"></div>
+      </div>
     </div>
   );
 };
