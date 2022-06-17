@@ -14,6 +14,7 @@ const Home = () => {
           <Widget type="earning" />
           <Widget type="user" />
         </div>
+        <div className="charts"></div>
       </div>
     </div>
   );
