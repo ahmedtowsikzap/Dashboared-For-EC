@@ -1,11 +1,7 @@
 import "./chart.scss";
 
 const Chart = () => {
-  return (
-    <div>
-      <h1>chart</h1>
-    </div>
-  );
+  return <div className="chart">chart</div>;
 };
 
 export default Chart;

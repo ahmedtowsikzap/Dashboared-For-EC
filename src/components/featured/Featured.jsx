@@ -1,11 +1,7 @@
-import "./feature.scss";
+import "./featured.scss";
 
 const Featured = () => {
-  return (
-    <div>
-      <h1>Featued Chart js</h1>
-    </div>
-  );
+  return <div className="featured">Featued Chart js</div>;
 };
 
 export default Featured;
