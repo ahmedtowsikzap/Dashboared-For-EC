@@ -15,4 +15,31 @@
       font-weight: 500;
     }
   }
+  .bottom {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+
+    .featuredChart {
+      width: 100px;
+      height: 100px;
+    }
+    .title {
+      font-weight: 500;
+      color: rgb(41, 219, 190);
+    }
+  }
+  .amount {
+    font-size: 30px;
+    color: rgb(4, 183, 1);
+  }
+  .desc {
+    font-weight: 300;
+    font-size: 12px;
+    color: gray;
+    text-align: center;
+  }
 }
