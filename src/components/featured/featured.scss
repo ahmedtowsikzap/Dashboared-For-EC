@@ -42,4 +42,32 @@
     color: gray;
     text-align: center;
   }
+
+  .summary {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .item {
+      text-align: center;
+
+      .itemTitle {
+        font-size: 14px;
+        color: gray;
+      }
+      .itemResult {
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+        font-size: 14px;
+        &.positive {
+          color: green;
+        }
+        &.negitive {
+          color: rgb(184, 40, 40);
+        }
+      }
+    }
+  }
 }
