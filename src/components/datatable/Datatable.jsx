@@ -1,6 +1,7 @@
+import "./datatable.scss";
 const Datatable = () => {
   return (
-    <div>
+    <div className="datatable">
       <h1>dtaaba</h1>
     </div>
   );
