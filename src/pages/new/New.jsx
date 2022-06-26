@@ -23,7 +23,7 @@ const New = () => {
             <form>
               <div className="formInput">
                 <label htmlFor="file">
-                  <CloudUploadOutlinedIcon />
+                  Image: <CloudUploadOutlinedIcon className="icon" />
                 </label>
                 <input type="file" id="file" style={{ display: "none" }} />
               </div>
