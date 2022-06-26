@@ -1,3 +1,4 @@
+import CloudUploadOutlinedIcon from "@mui/icons-material/CloudUploadOutlined";
 import Navbar from "../../components/navbar/Navbar";
 import Sidebar from "../../components/sidebar/Sidebar";
 import "./new.scss";
@@ -21,6 +22,12 @@ const New = () => {
           <div className="right">
             <form>
               <div className="formInput">
+                <label htmlFor="file">
+                  <CloudUploadOutlinedIcon />
+                </label>
+                <input type="file" id="file" style={{ display: "none" }} />
+              </div>
+              <div className="formInput">
                 <label>Username</label>
                 <input type="text" placeholder="Hon_Joe" />
               </div>
@@ -42,12 +49,13 @@ const New = () => {
               </div>
               <div className="formInput">
                 <label>Address</label>
-                <input type="text" />
+                <input type="text" placeholder="St. junoir 915  New jersy " />
               </div>
               <div className="formInput">
                 <label>Country</label>
-                <input type="text" />
+                <input type="text" placeholder="USA" />
               </div>
+              <button>Send</button>
             </form>
           </div>
         </div>
