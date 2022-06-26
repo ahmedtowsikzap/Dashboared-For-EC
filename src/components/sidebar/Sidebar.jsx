@@ -1,22 +1,25 @@
-import "./sidebar.scss";
-import DashboardSharpIcon from "@mui/icons-material/DashboardSharp";
-import GroupOutlinedIcon from "@mui/icons-material/GroupOutlined";
-import ProductionQuantityLimitsOutlinedIcon from "@mui/icons-material/ProductionQuantityLimitsOutlined";
 import AssignmentTurnedInOutlinedIcon from "@mui/icons-material/AssignmentTurnedInOutlined";
-import LocalShippingIcon from "@mui/icons-material/LocalShipping";
-import NotificationsActiveOutlinedIcon from "@mui/icons-material/NotificationsActiveOutlined";
-import InsertChartOutlinedTwoToneIcon from "@mui/icons-material/InsertChartOutlinedTwoTone";
-import MonitorHeartOutlinedIcon from "@mui/icons-material/MonitorHeartOutlined";
-import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
-import PsychologyOutlinedIcon from "@mui/icons-material/PsychologyOutlined";
+import DashboardSharpIcon from "@mui/icons-material/DashboardSharp";
 import ExitToAppIcon from "@mui/icons-material/ExitToApp";
+import GroupOutlinedIcon from "@mui/icons-material/GroupOutlined";
+import InsertChartOutlinedTwoToneIcon from "@mui/icons-material/InsertChartOutlinedTwoTone";
 import InsertEmoticonIcon from "@mui/icons-material/InsertEmoticon";
+import LocalShippingIcon from "@mui/icons-material/LocalShipping";
+import MonitorHeartOutlinedIcon from "@mui/icons-material/MonitorHeartOutlined";
+import NotificationsActiveOutlinedIcon from "@mui/icons-material/NotificationsActiveOutlined";
+import ProductionQuantityLimitsOutlinedIcon from "@mui/icons-material/ProductionQuantityLimitsOutlined";
+import PsychologyOutlinedIcon from "@mui/icons-material/PsychologyOutlined";
+import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
+import { Link } from "react-router-dom";
+import "./sidebar.scss";
 
 const Sidebar = () => {
   return (
     <div className="sidebar">
       <div className="top">
-        <span className="logo">Admin</span>
+        <Link to="/" style={{ textDecoration: "none" }}>
+          <span className="logo">Admin</span>
+        </Link>
       </div>
       <hr />
       <div className="center">
@@ -27,14 +30,18 @@ const Sidebar = () => {
             <span>Dashboard</span>
           </li>
           <p className="title">LISTS</p>
-          <li>
-            <GroupOutlinedIcon className="icon" />
-            <span>Users</span>
-          </li>
-          <li>
-            <ProductionQuantityLimitsOutlinedIcon className="icon" />
-            <span>Products</span>
-          </li>
+          <Link to="/users" style={{ textDecoration: "none" }}>
+            <li>
+              <GroupOutlinedIcon className="icon" />
+              <span>Users</span>
+            </li>
+          </Link>
+          <Link to="/products" style={{ textDecoration: "none" }}>
+            <li>
+              <ProductionQuantityLimitsOutlinedIcon className="icon" />
+              <span>Products</span>
+            </li>
+          </Link>
           <li>
             <AssignmentTurnedInOutlinedIcon className="icon" />
             <span>Orders</span>
