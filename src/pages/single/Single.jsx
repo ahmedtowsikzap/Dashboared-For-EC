@@ -1,3 +1,4 @@
+import Chart from "../../components/chart/Chart";
 import Navbar from "../../components/navbar/Navbar";
 import Sidebar from "../../components/sidebar/Sidebar";
 import "./single.scss";
@@ -40,7 +41,9 @@ const Single = () => {
               details
             </div>
           </div>
-          <div className="right"></div>
+          <div className="right">
+            <Chart aspect={3 / 1} title="User Transection" />
+          </div>
         </div>
         <div className="bottom"></div>
       </div>
