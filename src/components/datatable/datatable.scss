@@ -31,4 +31,24 @@
       color: crimson;
     }
   }
+  .cellAction {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    .viewButton {
+      padding: 2px 5px;
+      border-radius: 5px;
+      color: rgb(139, 102, 0);
+      border: 1px dotted rgba(0, 255, 200, 0.74);
+      cursor: pointer;
+    }
+    .deleteButton {
+      padding: 2px 5px;
+      border-radius: 5px;
+      color: crimson;
+      border: 1px dotted rgba(255, 115, 0, 0.74);
+      cursor: pointer;
+    }
+  }
 }
