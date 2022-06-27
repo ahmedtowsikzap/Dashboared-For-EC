@@ -49,11 +49,16 @@
         color: gray;
         border: none;
         .viewButton,
+        .cellWithStatus,
         .deleteButton {
           color: gray;
           border: none;
         }
       }
     }
+  }
+
+  input {
+    background-color: transparent;
   }
 }
