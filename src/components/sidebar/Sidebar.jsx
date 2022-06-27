@@ -82,7 +82,7 @@ const Sidebar = () => {
           <p className="title">USER</p>
           <li>
             <InsertEmoticonIcon className="icon" />
-            <span>Profile</span>
+            <span>Themes</span>
           </li>
         </ul>
       </div>

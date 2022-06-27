@@ -18,6 +18,7 @@ const Navbar = () => {
         </div>
         <div className="items">
           <div className="item">
+            <p>Night</p>
             <DarkModeOutlinedIcon
               className="icon"
               onClick={() => dispatch({ type: "TOGGLE" })}
