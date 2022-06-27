@@ -44,5 +44,16 @@
         }
       }
     }
+    .datatable {
+      .datagrid {
+        color: gray;
+        border: none;
+        .viewButton,
+        .deleteButton {
+          color: gray;
+          border: none;
+        }
+      }
+    }
   }
 }
