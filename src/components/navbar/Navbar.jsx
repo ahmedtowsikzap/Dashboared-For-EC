@@ -1,13 +1,14 @@
-import "./navbar.scss";
-import "./navbar.scss";
-import ManageSearchIcon from "@mui/icons-material/ManageSearch";
-import PublicIcon from "@mui/icons-material/Public";
-import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
-import NotificationsNoneOutlinedIcon from "@mui/icons-material/NotificationsNoneOutlined";
-import SendOutlinedIcon from "@mui/icons-material/SendOutlined";
 import BlurOnOutlinedIcon from "@mui/icons-material/BlurOnOutlined";
 import CropFreeOutlinedIcon from "@mui/icons-material/CropFreeOutlined";
+import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
+import ManageSearchIcon from "@mui/icons-material/ManageSearch";
+import NotificationsNoneOutlinedIcon from "@mui/icons-material/NotificationsNoneOutlined";
+import SendOutlinedIcon from "@mui/icons-material/SendOutlined";
+import { useContext } from "react";
+import { DarkModeContext } from "../../context/darkModeContext";
+import "./navbar.scss";
 const Navbar = () => {
+  const { dispatch } = useContext(DarkModeContext);
   return (
     <div className="navbar">
       <div className="wrapper">
@@ -17,11 +18,10 @@ const Navbar = () => {
         </div>
         <div className="items">
           <div className="item">
-            <PublicIcon className="icon" />
-            English
-          </div>
-          <div className="item">
-            <DarkModeOutlinedIcon className="icon" />
+            <DarkModeOutlinedIcon
+              className="icon"
+              onClick={() => dispatch({ type: "TOGGLE" })}
+            />
           </div>
           <div className="item">
             <NotificationsNoneOutlinedIcon className="icon" />
